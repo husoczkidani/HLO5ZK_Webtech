@@ -1,0 +1,48 @@
+/*Bright theme*/
+.bg-bright-theme{
+    background-color: white;
+    color:black;
+}
+.bg-bright-theme a{
+    color:black;
+}
+.bg-bright-theme #myBtn{
+    color:black;
+}
+.bg-bright-theme nav{
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+.bg-bright-theme nav span{
+    color:black;
+}
+.bg-bright-theme footer{
+    border-top:1px solid black;
+    background-color: white;
+}
+
+/*Dark theme*/
+.bg-dark-theme{
+    background-color: rgb(24,25,26);
+    color:white;
+}
+.bg-dark-theme a {
+    color:white;
+}
+.bg-dark-theme #myBtn{
+    color:white;
+}
+.bg-dark-theme nav{
+    background-color: rgb(36,37,38);
+    border:none;
+}
+.bg-dark-theme footer{
+    background-color: rgb(36,37,38);
+    border:none;
+}
+.bg-dark-theme nav span{
+    color:white;
+}
+.bg-dark-theme .offcanvas{
+    background-color: rgb(36,37,38);
+}
