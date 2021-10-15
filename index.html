@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Single Page Website for Webtech</title>
+
+    <!--Outer css-->
+    <link rel="stylesheet" href="styles/commonStyle.css">
+    <!--Links for bootstrap 5-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!--Inner css-->
+    <style>
+        body{
+            position: relative;
+        }
+        .img-text{
+          position: absolute;
+          top: 5%;
+          left: 3%;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-style:italic;
+          font-weight: bold;
+          font-size:40px;
+        }
+        .carousel-img{
+          position: relative;
+        }
+        .contact-button
+        {
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin-left: 5px;
+          margin-bottom: 20px;
+          cursor: pointer;
+          font-size:24px;
+        }
+  </style>
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" onload="onLoad()">
+
+<button onclick="topFunction()" id="myBtn" class="btn" title="Go to top">
+<span class="fa fa-arrow-up"></span>
+</button>
+
+  <div class="header">
+      <h3 class="display-3 text-center">Welcome</h3>
+  </div>
+
+  <nav id="navbar" class="navbar navbar-expand-sm sticky-top  " style="padding-right: 25px; padding-left: 25px;">
+    <div class="container-fluid ">
+      <ul class="navbar-nav">
+        <li class="navbar-item">
+          <a class="nav-link" href="#section1">Section 1</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link" href="#section2">Section 2</a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link" href="#section3">Section 3</a>
+        </li>
+
+        
+      </ul>
+    </div>
+    <div class="nav-item dropdown dropstart">
+      <button type="menu" class="btn" data-bs-toggle="dropdown">
+        <span class="fa fa-list"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <button class="btn" type="button" onclick="modeSwitch()">
+            Dark mode switch
+          </button>
+        </li>
+        <li>
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sendMessage">
+            Send a feedback.
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Picture carousel-->
+  <div id="carouselbody" class="carousel slide " data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselbody" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselbody" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselbody" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carouselbody" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#carouselbody" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#carouselbody" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#carouselbody" data-bs-slide-to="6"></button>
+      <button type="button" data-bs-target="#carouselbody" data-bs-slide-to="7"></button>
+      <button type="button" data-bs-target="#carouselbody" data-bs-slide-to="8"></button>
+    </div>
+    
+    <!--Pictures-->
+    <div class="carousel-inner">
+      <div class="carousel-item active carousel-img">
+        <img src="resources/honda.jpg" alt="Honda" class="d-block" style="width:100%">
+        <h2 class="img-text text-black">Honda</h2>
+      </div>
+      <div class="carousel-item carousel-img">
+        <img src="resources/acura.jpg" alt="Acura" class="d-block" style="width:100%">
+        <h2 class="img-text text-black">Acura</h2>
+      </div>
+      <div class="carousel-item carousel-img">
+        <img src="resources/subaru.jpg" alt="Subaru" class="d-block" style="width:100%">
+        <h2 class="img-text text-black">Subaru</h2>
+      </div>
+      <div class="carousel-item carousel-img">
+        <img src="resources/toyota.jpg" alt="Toyota" class="d-block" style="width:100%">
+        <h2 class="img-text text-black">Toyota</h2>
+      </div>
+      <div class="carousel-item carousel-img">
+        <img src="resources/nissan.jpg" alt="Nissan" class="d-block" style="width:100%">
+        <h2 class="img-text text-white ">Nissan</h2>
+      </div>
+      <div class="carousel-item carousel-img">
+        <img src="resources/suzuki.jpg" alt="Suzuki" class="d-block" style="width:100%">
+        <h2 class="img-text text-black">Suzuki</h2>
+      </div>
+      <div class="carousel-item carousel-img">
+        <img src="resources/lexus.jpg" alt="Lexus" class="d-block" style="width:100%">
+        <h2 class="img-text text-white">Lexus</h2>
+      </div>
+      <div class="carousel-item carousel-img">
+        <img src="resources/mazda.jpg" alt="Mazda" class="d-block" style="width:100%">
+        <h2 class="img-text text-black">Mazda</h2>
+      </div>
+      <div class="carousel-item carousel-img">
+        <img src="resources/mitsubishi.jpg" alt="Mitsubishi" class="d-block" style="width:100%">
+        <h2 class="img-text text-white ">Mitsubishi</h2>
+      </div>
+    </div>
+    <!--Left and Right buttons-->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselbody" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselbody" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!--Section1-->
+  <div id="section1" class="container-fluid text-center sections" >
+  </div>
+
+  <!-- Section 2-->
+  <div id="section2" class="container-fluid sections">
+    <button class="btn bg-info"> Add Item</button>
+  </div>
+
+
+  <!-- Section 3-->
+  <div id="section3" class="container-fluid sections">
+    <h1>Section 3</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+
+
+  <!-- Offcanvas form for feedback-->
+  <div class="offcanvas offcanvas-start" id="sendMessage">
+      <div class="offcanvas-header">
+          <h3 class="offcanvas-title">Send us a feedback.</h3>
+      </div>
+      <div class="offcanvas-body">
+        <form>
+          <!-- Full name-->
+          <div class="form-item">
+            <label for="fullName">Full Name:</label>
+            <input type="text" class="form-control" id="fullName">
+          </div>
+          <!-- Email address-->
+          <div class="form-item">
+            <label for="emailAddress">Email address:</label>
+            <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" >
+          </div>
+          <!-- Main text -->
+          <div class="form-item">
+            <label for="mainText">Write something:</label>
+            <textarea class="form-control" id="mainText" rows="6" ></textarea>
+          </div>
+          <!-- Send button-->
+          <button id="sendFeedback" type="submit" class="btn btn-success form-item" onclick="sendFeedb()">Send</button>
+          <!-- Alert box-->
+          <div id = "alertId" class="alert hidden"></div>
+        </form>
+      </div>
+  </div>
+
+  <!--Footer-->
+  <footer>
+    <h6>Contact:</h6>
+    <a class="contact-button"><span class="fa fa-facebook-square"></span></a>
+    <a class="contact-button"><span class="fa fa-instagram"></span></a>
+    <a class="contact-button"><span class="fa fa-github-square"></span></a>
+    <p class="made">The website was made by Husóczki Dániel </br>2021</p>
+  </footer>
+
+  <!-- Outer scripts-->
+  <script src="scripts/mode_switch.js"></script>
+  <script src="scripts/feedbackForm.js"></script>
+  <script src="scripts/to_the_top_btn.js"></script>
+
+</body>
+</html>
