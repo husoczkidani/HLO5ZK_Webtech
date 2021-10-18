@@ -19,14 +19,11 @@
         body{
             position: relative;
         }
-        .img-text{
+        .img-logo{
           position: absolute;
           top: 5%;
           left: 3%;
-          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          font-style:italic;
-          font-weight: bold;
-          font-size:40px;
+          height: 150px;
         }
         .carousel-img{
           position: relative;
@@ -62,13 +59,13 @@
     <div class="container-fluid ">
       <ul class="navbar-nav">
         <li class="navbar-item">
-          <a class="nav-link" href="#section1">Section 1</a>
+          <a class="nav-link" href="#section1"><b>Section 1</b></a>
         </li>
         <li class="navbar-item">
-          <a class="nav-link" href="#section2">Section 2</a>
+          <a class="nav-link" href="#section2"><b>Section 2</b></a>
         </li>
         <li class="navbar-item">
-          <a class="nav-link" href="#section3">Section 3</a>
+          <a class="nav-link" href="#section3"><b>Section 3</b></a>
         </li>
 
         
@@ -111,40 +108,40 @@
     <!--Pictures-->
     <div class="carousel-inner">
       <div class="carousel-item active carousel-img">
-        <img src="resources/honda.jpg" alt="Honda" class="d-block" style="width:100%">
-        <h2 class="img-text text-black">Honda</h2>
+        <img src="resources/carousel/honda.jpg" alt="Honda" class="d-block" style="width:100%">
+        <img src="resources/logos/hondalogo.png" alt="Honda Logo" class="img-logo">
       </div>
       <div class="carousel-item carousel-img">
-        <img src="resources/acura.jpg" alt="Acura" class="d-block" style="width:100%">
-        <h2 class="img-text text-black">Acura</h2>
+        <img src="resources/carousel/acura.jpg" alt="Acura" class="d-block" style="width:100%">
+        <img src="resources/logos/acuralogo.png" alt="Acura Logo" class="img-logo">
       </div>
       <div class="carousel-item carousel-img">
-        <img src="resources/subaru.jpg" alt="Subaru" class="d-block" style="width:100%">
-        <h2 class="img-text text-black">Subaru</h2>
+        <img src="resources/carousel/subaru.jpg" alt="Subaru" class="d-block" style="width:100%">
+        <img src="resources/logos/subarulogo.png" alt="Subaru Logo" class="img-logo">
       </div>
       <div class="carousel-item carousel-img">
-        <img src="resources/toyota.jpg" alt="Toyota" class="d-block" style="width:100%">
-        <h2 class="img-text text-black">Toyota</h2>
+        <img src="resources/carousel/toyota.jpg" alt="Toyota" class="d-block" style="width:100%">
+        <img src="resources/logos/toyotalogo.png" alt="Toyota Logo" class="img-logo">
       </div>
       <div class="carousel-item carousel-img">
-        <img src="resources/nissan.jpg" alt="Nissan" class="d-block" style="width:100%">
-        <h2 class="img-text text-white ">Nissan</h2>
+        <img src="resources/carousel/nissan.jpg" alt="Nissan" class="d-block" style="width:100%">
+        <img src="resources/logos/nissanlogo.png" alt="Nissan Logo" class="img-logo">
       </div>
       <div class="carousel-item carousel-img">
-        <img src="resources/suzuki.jpg" alt="Suzuki" class="d-block" style="width:100%">
-        <h2 class="img-text text-black">Suzuki</h2>
+        <img src="resources/carousel/suzuki.jpg" alt="Suzuki" class="d-block" style="width:100%">
+        <img src="resources/logos/suzukilogo.png" alt="Suzuki Logo" class="img-logo">
       </div>
       <div class="carousel-item carousel-img">
-        <img src="resources/lexus.jpg" alt="Lexus" class="d-block" style="width:100%">
-        <h2 class="img-text text-white">Lexus</h2>
+        <img src="resources/carousel/lexus.jpg" alt="Lexus" class="d-block" style="width:100%">
+        <img src="resources/logos/lexuslogo.png" alt="Lexus Logo" class="img-logo">
       </div>
       <div class="carousel-item carousel-img">
-        <img src="resources/mazda.jpg" alt="Mazda" class="d-block" style="width:100%">
-        <h2 class="img-text text-black">Mazda</h2>
+        <img src="resources/carousel/mazda.jpg" alt="Mazda" class="d-block" style="width:100%">
+        <img src="resources/logos/mazdalogo.png" alt="Mazda Logo" class="img-logo">
       </div>
       <div class="carousel-item carousel-img">
-        <img src="resources/mitsubishi.jpg" alt="Mitsubishi" class="d-block" style="width:100%">
-        <h2 class="img-text text-white ">Mitsubishi</h2>
+        <img src="resources/carousel/mitsubishi.jpg" alt="Mitsubishi" class="d-block" style="width:100%">
+        <img src="resources/logos/mitsubishilogo.png" alt="Mitsubishi Logo" class="img-logo">
       </div>
     </div>
     <!--Left and Right buttons-->
@@ -162,31 +159,53 @@
 
   <!-- Section 2-->
   <div id="section2" class="container-fluid sections">
-    <button type="button" class="btn bg-info" data-bs-toggle="modal" data-bs-target="#myModal"> Add New Item</button>
-    
-    <table class="table table-hover" >
+    <button type="button" class="btn bg-info" data-bs-toggle="modal" data-bs-target="#myModal">Add New Item</button>
+    <!--Table-->
+    <table class="table table-hover table-responsive-md" >
       <thead>
         <tr>
-          <th>Head1</th>
-          <th>Head2</th>
-          <th>Head3</th>
+          <th>Brand</th>
+          <th>Type</th>
+          <th>Fuel</th>
+          <th>Year</th>
+          <th>Performance</th>
         </tr>
       </thead>
       <tbody id="section2Table">
         <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
+          <td>Nissan</td>
+          <td>350z</td>
+          <td>Petrol</td>
+          <td>2004</td>
+          <td>206Kw ,276Hp</td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
+          <td>Acura</td>
+          <td>RSX</td>
+          <td>Petrol</td>
+          <td>2005</td>
+          <td>114Kw ,153Hp</td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
+          <td>Mitsubishi</td>
+          <td>Lancer</td>
+          <td>Petrol</td>
+          <td>2009</td>
+          <td>105Kw ,141Hp</td>
+        </tr>
+        <tr>
+          <td>Lexus</td>
+          <td>CT</td>
+          <td>Hybrid</td>
+          <td>2011</td>
+          <td>73Kw ,98Hp</td>
+        </tr>
+        <tr>
+          <td>Mazda</td>
+          <td>RX-8</td>
+          <td>Petrol</td>
+          <td>2006</td>
+          <td>170Kw ,228Hp</td>
         </tr>
       </tbody>
     </table>
@@ -244,44 +263,66 @@
   
         <!-- Modal body -->
         <div class="modal-body" style="padding:30px;">
-          <form name="name">
+          <form class="needs-validation" novalidate>
+            <!--Brand-->
             <div class="form-item">
               <label for="brand">Brand:</label>
-              <input id="brand" type="text" class="form-control">
+              <input id="brand" type="text" class="form-control" required>
+              <div class="invalid-feedback">
+                Please enter a brand.
+              </div>
             </div>
+            <!--Type-->
             <div class="form-item">
               <label for="type">Type:</label>
-              <input id="type" type="text" class="form-control">
+              <input id="type" type="text" class="form-control" required>
+              <div class="invalid-feedback">
+                Please enter a type.
+              </div>
             </div>
+            <!--Fuel type-->
             <div class="form-item">
-              <label for="üzemanyag">Fuel:</label>
-              <select id="üzemanyag" class="form-select">
+              <label for="fuel">Fuel:</label>
+              <select id="fuel" class="form-select" required>
+                <option selected disabled value="">Choose...</option>
                 <option>Diesel</option>
                 <option>Petrol</option>
                 <option>Gas/Petrol</option>
+                <option>Hybrid</option>
+                <option>Electric</option>
+                <option>Electric</option>
+                <option>Biodiesel</option>
               </select>
+              <div class="invalid-feedback">
+                Please choose a fuel type.
+              </div>
             </div>
+            <!--Year-->
             <div class="form-item">
-              <label for="evjarat">Year:</label>
-              <input id="evjarat" type="number" class="form-control"/>
+              <label for="year">Year:</label>
+              <input id="year" type="number" max="2021" class="form-control" required>
+              <div class="invalid-feedback">
+                Please enter a valid year.
+              </div>
             </div>
+            <!--Performance-->
             <div class="form-item">
               <label for="performanceSlider" class="form-label">Performance:</label>
               <div class="input-group form-item">
                 <label for="performanceSlider" class="form-label sbs">Kw: </label>
-                <input id="performanceTextKW" type="text" class="form-control sbs"/>
+                <input id="performanceTextKW" type="text" class="form-control sbs" required>
                 <label for="performanceSlider" class="form-label sbs">Hp: </label>
-                <input id="performanceTextHP" type="text" class="form-control sbs"/>
+                <input id="performanceTextHP" type="text" class="form-control sbs" required>
               </div>
               <input type="range" class="form-range" id="performanceSlider" value="0" min="1" max="1000" step="1">
+              <div class="invalid-feedback">
+                Please provide a valid performance.
+              </div>
             </div>
+            <!--Buttons-->
+            <button type="submit" class="btn btn-primary" >Add Item</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
           </form>
-        </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Add Item</button>
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
