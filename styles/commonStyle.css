@@ -35,7 +35,7 @@ footer .made{
 }
 
 /* To the top button */
-#myBtn {
+#toTheTopBtn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -45,6 +45,8 @@ footer .made{
     background-color: transparent;
   }
   
-  #myBtn:hover {
+#toTheTopBtn:hover {
     color:red;
-  }
+}
+
+  
