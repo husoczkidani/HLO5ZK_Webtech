@@ -160,6 +160,7 @@
   <!-- Section 2-->
   <div id="section2" class="container-fluid sections">
     <button type="button" class="btn bg-info" data-bs-toggle="modal" data-bs-target="#addItemModal">Add New Item</button>
+    <input id="textFilterInput" type="text" placeholder="Search..">
     <!--Table-->
     <table class="table table-responsive-md" >
       <thead>
@@ -266,17 +267,20 @@
           <form>
             <!--Brand-->
             <div class="form-item">
-              <label id="brandLabel" for="brand">Brand:</label>
+              <label id="brandLabel" for="brand">Brand: </label>
+              <spam id="brandCheck" >**Brand is missing </spam>
               <input id="brand" type="text" class="form-control" required>
             </div>
             <!--Type-->
             <div class="form-item">
               <label for="type">Type:</label>
+              <spam id="typeCheck" >**Type is missing </spam>
               <input id="type" type="text" class="form-control" required>
             </div>
             <!--Fuel type-->
             <div class="form-item">
               <label for="fuel">Fuel:</label>
+              <spam id="fuelCheck" >**Fuel type is missing </spam>
               <select id="fuel" class="form-select" required>
                 <option selected disabled value="">Choose...</option>
                 <option>Diesel</option>
@@ -291,11 +295,13 @@
             <!--Year-->
             <div class="form-item">
               <label for="year">Year:</label>
+              <spam id="yearCheck" >**Year is missing </spam>
               <input id="year" type="number" min=1900 max=2021 class="form-control" required>
             </div>
             <!--Performance-->
             <div class="form-item">
               <label for="performanceSlider" class="form-label">Performance:</label>
+              <spam id="performanceCheck" >**Performance can't be zero </spam>
               <div class="input-group form-item">
                 <label for="performanceSlider" class="form-label sbs">Kw: </label>
                 <input id="performanceTextKW" type="text" class="form-control sbs" value="0" required>
@@ -319,9 +325,9 @@
   <!--Footer-->
   <footer>
     <h6>Contact:</h6>
-    <a class="contact-button"><span class="fa fa-facebook-square"></span></a>
-    <a class="contact-button"><span class="fa fa-instagram"></span></a>
-    <a class="contact-button"><span class="fa fa-github-square"></span></a>
+    <a class="contact-button" target="_blank" href="https://www.facebook.com/husoczki.daniel"><span class="fa fa-facebook-square"></span></a>
+    <a class="contact-button" target="_blank" href="https://www.instagram.com/husoczki.daniel/"><span class="fa fa-instagram"></span></a>
+    <a class="contact-button" target="_blank" href="https://www.github.com/husoczkidani"><span class="fa fa-github-square"></span></a>
     <p class="made">The website was made by Husóczki Dániel </br>2021</p>
   </footer>
 
@@ -331,6 +337,7 @@
   <script src="scripts/to_the_top_btn.js"></script>
   <script src="scripts/insert_table.js"></script>
   <script src="scripts/modalSlider.js"></script>
+  <script src="scripts/text_filter.js"></script>
 
 </body>
 </html>

@@ -34,6 +34,10 @@ footer .made{
     padding: 10px;
 }
 
+form spam{
+    color: #ff3333;
+}
+
 /* To the top button */
 #toTheTopBtn {
     display: none;
