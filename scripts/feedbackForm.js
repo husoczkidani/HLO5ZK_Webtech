@@ -21,7 +21,7 @@ function sendFeedb(){
 
         alert.classList.remove("alert-success")
         alert.classList.add("alert-danger")
-        alert.innerHTML = ("<strong>Error!</strong> Email sending was unsuccesfull! Fill all block and try again!")
+        alert.innerHTML = ("<strong>Error!</strong> Email sending was unsuccesfull! Fill all block or enter a valid email address and try again!")
         alert.classList.remove('hidden')
         
     }
