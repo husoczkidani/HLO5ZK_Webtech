@@ -18,6 +18,7 @@
     <style>
         body{
             position: relative;
+            font-size: 17px;
         }
         .img-logo{
           position: absolute;
@@ -42,6 +43,10 @@
           padding-right: 15px;
           padding-left: 15px;
         }
+        .navbar-logo{
+          height: 40px;
+          padding: 0%;
+        }
   </style>
 
 </head>
@@ -56,16 +61,20 @@
   </div>
 
   <nav id="navbar" class="navbar navbar-expand-sm sticky-top  " style="padding-right: 25px; padding-left: 25px;">
+    <img class="navbar-brand navbar-logo" src="resources/logos/navbarlogo.png" />
     <div class="container-fluid ">
       <ul class="navbar-nav">
         <li class="navbar-item">
           <a class="nav-link" href="#section1"><b>Section 1</b></a>
         </li>
         <li class="navbar-item">
-          <a class="nav-link" href="#section2"><b>Check out the list</b></a>
+          <a class="nav-link" href="#carouselbody"><b>Japanese car brands</b></a>
         </li>
         <li class="navbar-item">
           <a class="nav-link" href="#section3"><b>Section 3</b></a>
+        </li>
+        <li class="navbar-item">
+          <a class="nav-link" href="#section4"><b>Check out the list</b></a>
         </li>
 
         
@@ -90,6 +99,33 @@
     </div>
   </nav>
 
+  <!-- video-->
+  <div class="carousel-img">
+    <video autoplay muted loop id="video">
+      <source src="resources/media/midnight_run.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <div class="content">
+      <h1>Automotive industry in Japan</h1>
+      <p>The automotive industry in Japan is one of the most prominent and largest industries in the world. Japan has been in the top three of 
+         countries with most cars manufactured since the 1960s, surpassing Germany. The automotive industry in Japan rapidly increased from the 
+         1970s to the 1990s and in the 1980s and 1990s, overtook the U.S. as the production leader with up to 13 million cars per year manufactured 
+         and significant exports.Japan is currently the third largest automotive producer in the world with an annual production of 9.9 million 
+         automobiles in 2012. Japanese investments helped grow the auto industry in many countries throughout the last few decades.</p>
+      <span id="videoController" class="fa fa-pause"></span>
+    </div>
+  </div>
+  
+
+  <!-- Section 1-->
+  <div id="section1" class="container-fluid sections">
+    <h1>Section 1</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+
+  <!-- Section 2-->
   <!--Picture carousel-->
   <div id="carouselbody" class="carousel slide " data-bs-ride="carousel">
 
@@ -110,38 +146,74 @@
       <div class="carousel-item active carousel-img">
         <img src="resources/carousel/honda.jpg" alt="Honda" class="d-block" style="width:100%">
         <img src="resources/logos/hondalogo.png" alt="Honda Logo" class="img-logo">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Honda</h5>
+          <p>Honda became the second-largest Japanese automobile manufacturer in 2001. Honda was the sixth largest automobile manufacturer in the world in 2019.</p>
+        </div>
       </div>
       <div class="carousel-item carousel-img">
         <img src="resources/carousel/acura.jpg" alt="Acura" class="d-block" style="width:100%">
         <img src="resources/logos/acuralogo.png" alt="Acura Logo" class="img-logo">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Acura</h5>
+          <p>Acura is the luxury vehicle marque of Japanese automaker Honda. The brand was launched in the United States and Canada in March 1986.</p>
+        </div>
       </div>
       <div class="carousel-item carousel-img">
         <img src="resources/carousel/subaru.jpg" alt="Subaru" class="d-block" style="width:100%">
         <img src="resources/logos/subarulogo.png" alt="Subaru Logo" class="img-logo">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Subaru</h5>
+          <p>Subaru was the twenty-second biggest automaker by production worldwide in 2012. In Western markets, the Subaru brand has traditionally been popular among a dedicated core of buyers.</p>
+        </div>
       </div>
       <div class="carousel-item carousel-img">
         <img src="resources/carousel/toyota.jpg" alt="Toyota" class="d-block" style="width:100%">
         <img src="resources/logos/toyotalogo.png" alt="Toyota Logo" class="img-logo">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Toyota</h5>
+          <p>Toyota is the second largest automobile manufacturer in the world, behind Volkswagen, based on 2018 unit sales and the global market leader in sales of hybrid electric vehicles,.</p>
+        </div>
       </div>
       <div class="carousel-item carousel-img">
         <img src="resources/carousel/nissan.jpg" alt="Nissan" class="d-block" style="width:100%">
         <img src="resources/logos/nissanlogo.png" alt="Nissan Logo" class="img-logo">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Nissan</h5>
+          <p>The name 'Nissan' originated during the 1930s as an abbreviation used on the Tokyo Stock Exchange for Nihon Sangyo. Nissan's slogan has been "Innovation That Excites" in the United States.</p>
+        </div>
       </div>
       <div class="carousel-item carousel-img">
         <img src="resources/carousel/suzuki.jpg" alt="Suzuki" class="d-block" style="width:100%">
         <img src="resources/logos/suzukilogo.png" alt="Suzuki Logo" class="img-logo">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Suzuki</h5>
+          <p>The Suzuki Motor Corporation is a Japanese manufacturing company producing a range of small automobiles, a full range of motorcycles, outboard motors, and a variety of other small combustion-powered engine products.</p>
+        </div>
       </div>
       <div class="carousel-item carousel-img">
         <img src="resources/carousel/lexus.jpg" alt="Lexus" class="d-block" style="width:100%">
         <img src="resources/logos/lexuslogo.png" alt="Lexus Logo" class="img-logo">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lexus</h5>
+          <p>Lexus is the luxury vehicle division of Japanese car maker Toyota. The Lexus marque is marketed in more than 70 countries and territories worldwide and has become Japan's largest-selling make of premium cars.</p>
+        </div>
       </div>
       <div class="carousel-item carousel-img">
         <img src="resources/carousel/mazda.jpg" alt="Mazda" class="d-block" style="width:100%">
         <img src="resources/logos/mazdalogo.png" alt="Mazda Logo" class="img-logo">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mazda</h5>
+          <p>Mazda Motor Corporation is a Japanese automaker based in Fuchū, Aki District, Hiroshima Prefecture, Japan. 2011, Mazda was the fifteenth biggest automaker by production worldwide.</p>
+        </div>
       </div>
       <div class="carousel-item carousel-img">
         <img src="resources/carousel/mitsubishi.jpg" alt="Mitsubishi" class="d-block" style="width:100%">
         <img src="resources/logos/mitsubishilogo.png" alt="Mitsubishi Logo" class="img-logo">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mitsubishi</h5>
+          <p>Mitsubishi Motors was the sixth biggest Japanese automaker and the sixteenth biggest worldwide by production. As of June 2016, Mitsubishi is majority-owned by Nissan, and thus a part of the Renault-Nissan Alliance.</p>
+        </div>
       </div>
     </div>
     <!--Left and Right buttons-->
@@ -153,12 +225,15 @@
     </button>
   </div>
 
-  <!--Section1-->
-  <div id="section1" class="container-fluid text-center sections" >
+  <!--Section3-->
+  <div id="section3" class="container-fluid text-center sections" >
   </div>
 
-  <!-- Section 2-->
-  <div id="section2" class="container-fluid sections">
+  
+  
+
+  <!-- Section 4-->
+  <div id="section4" class="container-fluid sections">
     <!--Button and search bar-->
     <div class="input-group">
       <button type="button" class="btn bg-info rounded" data-bs-toggle="modal" data-bs-target="#addItemModal">Add New Item</button>
@@ -216,15 +291,6 @@
       </tbody>
     </table>
   </div>
-
-
-  <!-- Section 3-->
-  <div id="section3" class="container-fluid sections">
-    <h1>Section 3</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  </div>
-
 
   <!-- Offcanvas form for feedback-->
   <div class="offcanvas offcanvas-start " id="sendMessage">
@@ -334,6 +400,7 @@
     <a class="contact-button" target="_blank" href="https://www.instagram.com/husoczki.daniel/"><span class="fa fa-instagram"></span></a>
     <a class="contact-button" target="_blank" href="https://www.github.com/husoczkidani"><span class="fa fa-github-square"></span></a>
     <p class="made">The website was made by Husóczki Dániel </br>2021</p>
+    <p class="made"><a href="https://www.youtube.com/channel/UC9iy0bQd8OddxuHl1e3qkzw" target="_blank">Video was made by Hartnett Media</a></p>
   </footer>
 
   <!-- Outer scripts-->
@@ -343,6 +410,7 @@
   <script src="scripts/insert_table.js"></script>
   <script src="scripts/modalSlider.js"></script>
   <script src="scripts/text_filter.js"></script>
+  <script src="scripts/video.js"></script>
 
 </body>
 </html>
