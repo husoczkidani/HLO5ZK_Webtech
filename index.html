@@ -71,10 +71,10 @@
           <a class="nav-link" href="#carouselbody"><b>Japanese car brands</b></a>
         </li>
         <li class="navbar-item">
-          <a class="nav-link" href="#section3"><b>Section 3</b></a>
+          <a class="nav-link" href="#car_events"><b>Car Events</b></a>
         </li>
         <li class="navbar-item">
-          <a class="nav-link" href="#section4"><b>Check out the list</b></a>
+          <a class="nav-link" href="#list"><b>Check out the list</b></a>
         </li>
 
         
@@ -101,7 +101,7 @@
 
   <!-- video-->
   <div class="carousel-img">
-    <video autoplay muted loop id="video">
+    <video autoplay muted loop id="video" class="video">
       <source src="resources/media/midnight_run.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
@@ -226,15 +226,43 @@
   </div>
 
   <!--Section3-->
-  <div id="section3" class="container-fluid text-center sections" >
-      
+  <div id="car_events" class="container-fluid text-center sections" style="height: 600px;">
+    <h1 class="display-4 text-center">Car events</h1>
+
+      <div id="rally_div" class="zoom" style="position: relative; float: left; margin-left: 130px; "> 
+        <div class="carousel-img ">
+          <img id="rally_img" src="resources/media/rally.jpg" style="width: 100%; position: absolute;"/>
+          <video style="width: 40%;" class="video" muted loop id="rally_video">
+            <source src="resources/media/wrc_rally.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="content">
+            <h3>Rally events</h3>
+            <p style="font-size: 14px;">The automotive industry in Japan is one of the most prominent and largest industries in the world. Japan has been in the top three of 
+          </div>
+        </div>
+       </div>
+
+      <div id="drift_div" class="zoom" style="width: 40%; float: right; margin-right: 130px; "> 
+        <div class="carousel-img ">
+          <img id="drift_img" src="resources/media/drift.jpg" style="width: 100%; position: absolute;"/>
+          <video style="width: 40%;" class="video" muted loop id="drift_video">
+            <source src="resources/media/trackwood.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="content">
+            <h3>Drift events</h3>
+            <p style="font-size: 14px;">The automotive industry in Japan is one of the most prominent and largest industries in the world. Japan has been in the top three of 
+          </div>
+        </div>
+      </div>
   </div>
 
   
   
 
   <!-- Section 4-->
-  <div id="section4" class="container-fluid sections">
+  <div id="list" class="container-fluid sections">
     <!--Button and search bar-->
     <div class="input-group">
       <button type="button" class="btn bg-info rounded" data-bs-toggle="modal" data-bs-target="#addItemModal">Add New Item</button>
@@ -412,6 +440,8 @@
   <script src="scripts/modalSlider.js"></script>
   <script src="scripts/text_filter.js"></script>
   <script src="scripts/video.js"></script>
+  <script src="scripts/video_animation.js"></script>
+
 
 </body>
 </html>

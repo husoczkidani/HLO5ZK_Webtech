@@ -60,7 +60,7 @@ form span{
 }
 
 /*fullscreen video */
-#video {
+.video {
     right: 0;
     bottom: 0;
     min-width: 100%; 
@@ -84,6 +84,11 @@ form span{
     cursor: pointer;
 }
 
-
-
-  
+div.zoom {
+    transition: transform .3s;
+    width: 40%;
+}
+ 
+.transition {
+    transform: scale(1.2);
+}
