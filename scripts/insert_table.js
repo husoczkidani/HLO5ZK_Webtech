@@ -92,6 +92,9 @@ $(document).ready(function(){
   $('#performanceTextHP').keyup(function(){
     validatePerformance();
   });
+  $("#performanceSlider").on('input', function(){
+    validatePerformance();
+  });
 
   function validatePerformance(){
     let performanceVal = $('#performanceTextKW').val();
@@ -116,6 +119,11 @@ $(document).ready(function(){
     
     if(isGood){
       insertTable()
+      brandError = false;
+      typeError = false;
+      fuelError = false;
+      yearError = false;
+      performanceError = false;
     }else{
       if(!brandError){
         $('#brandCheck').show();

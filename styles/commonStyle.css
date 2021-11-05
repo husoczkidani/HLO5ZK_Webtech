@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+  }
 /* Navbar and sections*/
 .sections{
     padding:100px 20px;
@@ -37,7 +40,7 @@ footer .made{
     padding: 10px;
 }
 
-form spam{
+form span{
     color: #ff3333;
 }
 
@@ -80,5 +83,7 @@ form spam{
     color: #fff;
     cursor: pointer;
 }
+
+
 
   
