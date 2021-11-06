@@ -60,7 +60,7 @@ $(document).ready(function(){
   //Year validation
   $('#yearCheck').hide();
   let yearError = false;
-  $('#year').keyup(function(){
+  $("#year").on('input', function(){
     validateYear();
   });
 
@@ -86,10 +86,10 @@ $(document).ready(function(){
   //Performance validation
   $('#performanceCheck').hide();
   let performanceError = false;
-  $('#performanceTextKW').keyup(function(){
+  $("#performanceTextKW").on('input', function(){
     validatePerformance();
   });
-  $('#performanceTextHP').keyup(function(){
+  $("#performanceTextHP").on('input', function(){
     validatePerformance();
   });
   $("#performanceSlider").on('input', function(){
