@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
-  }
+}
+body{
+    position: relative;
+    font-size: 17px;
+}
 /* Navbar and sections*/
 .sections{
     padding:100px 20px;
@@ -12,7 +16,10 @@
 .navbar-dropdown{
     text-align: right;
 }
-
+.navbar-logo{
+    height: 40px;
+    padding: 0%;
+  }
 /*Footer*/
 footer{
     height: auto;
