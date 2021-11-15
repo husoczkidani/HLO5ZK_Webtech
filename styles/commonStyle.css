@@ -34,9 +34,9 @@ footer > a:hover{
     color:red;
 }
 footer p > a:visited{
-    color:yellow;
+    color:rgb(61, 77, 221);
 }
-footer .made{
+footer > p{
     padding: 0px;
     font-size:14px;
 }
@@ -66,8 +66,8 @@ form span{
     background-color: transparent;
   }
   
-#toTheTopBtn:hover {
-    color:red;
+#toTheTopBtn :hover {
+    color:rgb(228, 91, 91);
 }
 
 /*fullscreen video */

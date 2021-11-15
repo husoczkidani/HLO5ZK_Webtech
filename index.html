@@ -39,6 +39,14 @@
           padding-right: 15px;
           padding-left: 15px;
         }
+        #market >p{
+          font-size:19px;
+          text-indent: 10px;
+        }
+        #market >img{
+          position:absolute;
+          z-index: 1;
+        }
   </style>
 
 </head>
@@ -57,7 +65,7 @@
     <div class="container-fluid ">
       <ul class="navbar-nav">
         <li class="navbar-item">
-          <a class="nav-link" href="#section1"><b>Section 1</b></a>
+          <a class="nav-link" href="#market"><b>Japanese Market</b></a>
         </li>
         <li class="navbar-item">
           <a class="nav-link" href="#carouselbody"><b>Japanese car brands</b></a>
@@ -111,11 +119,20 @@
   
 
   <!-- Section 1-->
-  <div id="section1" class="container-fluid sections">
-    <h1>Section 1</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  </div>
+  <div id="market" class="container-fluid sections">
+    <h1 class="display-3">Overview of the Japanese Automotive Market</h1>
+    <p>
+      The automotive sector in Japan is the third-largest automotive producing industry in the world, with 78 factories in 22 prefectures and employing over 5.5 million people, it is a major pillar of the country’s economy. Automotive manufacturing takes up 89% of the country’s manufacturing sector and auto parts suppliers have also grown a substantial part of Japan’s economy, spreading into other industries such as chemicals and rubber. It is a highly innovative and technology-driven industry, with increased production of hybrid and electric vehicles being brought onto the domestic and global market and an increase of supply and demand on an international scale.  
+    </p><p>
+      Domestic brands such as Toyota, Nissan, Honda, Suzuki and Mitsubishi dominate the Japanese automotive market, with foreign-manufactured cars seen more as status symbols due to the incredibly high maintenance cost of imported vehicles. The majority of car owners reside in rural areas of Japan, while its urban population heavily relies on public transport.
+    </p><p>
+      Kei cars and motorcycles are also affordable alternatives to regular-sized cars and satisfy the country’s demand for convenience in tiny spaces, however, the Japanese automotive industry is becoming more environmentally aware thus consumers are moving away from motorcycles to bicycles and e-bikes.
+    </p><h4>Kei cars <span id="show_kei" class="fa fa-external-link"></span></h4></span><img id="kei" src="resources/media/kei_cars.jpg" /><p>
+      In order to cater to Japan’s limited space, ageing society and increase in single-person households, Japan’s automotive industry created ‘keijidōsha’ (軽自動車), light automobiles otherwise known as Kei cars. They are very small vehicles that benefit from certain tax insurance and regulations, making them much cheaper than regular passenger cars, but also easier to navigate in Japan’s metropolitan areas.
+    </p><p>
+      The success of Kei cars is limited to Japan, being bought mainly by first-time drivers and as a fashion statement by female drivers, yet they are sold across Europe. All of Japan’s major automotive brands manufacture ‘keijidōsha’, with 1.9 million sold within the last year and Honda’s N-Box dominating Japan’s light automobile sales in 2019.
+    </p>
+</div>
 
   <!-- Section 2-->
   <!--Picture carousel-->
@@ -424,12 +441,13 @@
     <a class="contact-button" target="_blank" href="https://www.facebook.com/husoczki.daniel"><span class="fa fa-facebook-square"></span></a>
     <a class="contact-button" target="_blank" href="https://www.instagram.com/husoczki.daniel/"><span class="fa fa-instagram"></span></a>
     <a class="contact-button" target="_blank" href="https://www.github.com/husoczkidani"><span class="fa fa-github-square"></span></a>
-    <p class="made">The website was made by Husóczki Dániel </br>2021</p>
-    <p class="made">Videos was made by: 
+    <p>The website was made by Husóczki Dániel </br>2021</p>
+    <p>Videos was made by: 
       <a href="https://www.youtube.com/channel/UC9iy0bQd8OddxuHl1e3qkzw" target="_blank"> Hartnett Media, </a>
       <a href="https://www.youtube.com/channel/UC_ThZgHTq4tVIQMr6Gb6A1w" target="_blank">J-Records, </a>
       <a href="https://www.youtube.com/c/Ak%C3%A9tJZ" target="_blank">A két JZ</a> 
     </p>
+    <p>Reference: <a href="https://en.wikipedia.org" target="_blank">EN Wikipedia</a></p>
   </footer>
 
   <!-- Outer scripts-->
@@ -440,6 +458,7 @@
   <script src="scripts/modalSlider.js"></script>
   <script src="scripts/text_filter.js"></script>
   <script src="scripts/video.js"></script>
+  <script src="scripts/show_img.js"></script>
 
 
 </body>
