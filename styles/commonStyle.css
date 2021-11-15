@@ -28,9 +28,13 @@ footer{
 }
 footer a{
     text-decoration: none;
+    color:white;
 }
-footer a:hover{
+footer > a:hover{
     color:red;
+}
+footer p > a:visited{
+    color:yellow;
 }
 footer .made{
     padding: 0px;
