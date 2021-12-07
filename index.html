@@ -39,6 +39,9 @@
           padding-right: 15px;
           padding-left: 15px;
         }
+        #market{
+          padding: 5%;
+        }
         #market >p{
           font-size:19px;
           text-indent: 10px;
@@ -235,40 +238,42 @@
   </div>
 
   <!--Section3-->
-  <div id="car_events" class="container-fluid text-center sections" style="height: 600px;">
     <h1 class="display-4 text-center">Car events</h1>
-
-      <div id="rally_div" class="zoom" style="position: relative; float: left; margin-left: 130px; "> 
-        <div class="carousel-img ">
-          <img id="rally_img" src="resources/media/rally.jpg" style="width: 100%; position: absolute;"/>
-          <video style="width: 40%;" class="video" muted loop id="rally_video">
-            <source src="resources/media/wrc_rally.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video>
-          <div class="content">
-            <h3>Rally events</h3>
-            <p style="font-size: 14px;">Rally is a form of motorsport that takes place on public or private roads with modified production or specially built road-legal cars. It is distinguished by not running on a circuit, but instead in a point-to-point format in which participants and their co-drivers drive between set control points (special stages), leaving at regular intervals from one or more start points.
+    <table style="margin:5%;width: 90%; text-align: center;">
+      <tr>
+        <td>
+          <div id="rally_div" class="zoom" > 
+            <div class="carousel-img ">
+              <img id="rally_img" src="resources/media/rally.jpg" />
+              <video class="video" muted loop id="rally_video">
+                <source src="resources/media/wrc_rally.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="content">
+                <h3>Rally events</h3>
+                <p style="font-size: 14px;">Rally is a form of motorsport that takes place on public or private roads with modified production or specially built road-legal cars. It is distinguished by not running on a circuit, but instead in a point-to-point format in which participants and their co-drivers drive between set control points (special stages), leaving at regular intervals from one or more start points.
+              </div>
+            </div>
           </div>
-        </div>
-       </div>
-
-      <div id="drift_div" class="zoom" style="width: 40%; float: right; margin-right: 130px; "> 
-        <div class="carousel-img ">
-          <img id="drift_img" src="resources/media/drift.jpg" style="width: 100%; position: absolute;"/>
-          <video style="width: 40%;" class="video" muted loop id="drift_video">
-            <source src="resources/media/trackwood.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video>
-          <div class="content">
-            <h3>Drift events</h3>
-            <p style="font-size: 14px;">Drifting is a driving technique where the driver intentionally oversteers, with loss of traction, while maintaining control and driving the car through the entirety of a corner. The technique causes the rear slip angle to exceed the front slip angle to such an extent that often the front wheels are pointing in the opposite direction to the turn.  
+        </td>
+        <td>
+          <div id="drift_div" class="zoom" > 
+            <div class="carousel-img">
+              <img id="drift_img" src="resources/media/drift.jpg" />
+              <video class="video" muted loop id="drift_video">
+                <source src="resources/media/trackwood.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="content">
+                <h3>Drift events</h3>
+                <p style="font-size: 14px;">Drifting is a driving technique where the driver intentionally oversteers, with loss of traction, while maintaining control and driving the car through the entirety of a corner. The technique causes the rear slip angle to exceed the front slip angle to such an extent that often the front wheels are pointing in the opposite direction to the turn.  
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-  </div>
-
-  
-  
+        </td>
+      </tr>
+    </table>
+    
 
   <!-- Section 4-->
   <div id="list" class="container-fluid sections">

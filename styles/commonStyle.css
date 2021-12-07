@@ -86,6 +86,9 @@ form span{
     width: 100%;
     padding: 20px;
 }
+.content > p::first-line{
+    font-weight: bold;
+}
   
 #videoController {
     background: none;
@@ -97,9 +100,13 @@ form span{
 
 div.zoom {
     transition: transform .3s;
-    width: 40%;
+    border:15px solid transparent;
 }
  
 .transition {
     transform: scale(1.2);
+}
+
+table img{
+    width: 100%; position: absolute;
 }
